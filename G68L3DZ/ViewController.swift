@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         let squareOfNumber = (firstNumber * firstNumber)
         let cubeOfNumber = (firstNumber * firstNumber * firstNumber)
         print("Kvadrat chisla: ", squareOfNumber)
-        print("Cube chisla :", cubeOfNumber)
+        print("Cube chisla :", cubeOfNumber) 
         
             
     }
