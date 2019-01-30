@@ -13,6 +13,16 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let firstNumber = Int.random(in: 1...10)
+        let secondNumber = Int.random(in: 1...10)
+        print(firstNumber)
+        print(secondNumber)
+        if firstNumber > secondNumber {
+            print("Biggest number: ", firstNumber)}
+        else {
+            print("Biggest number: ", secondNumber)
+        }
+            
     }
 
 
