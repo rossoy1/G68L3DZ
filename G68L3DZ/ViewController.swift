@@ -22,6 +22,11 @@ class ViewController: UIViewController {
         else {
             print("Biggest number: ", secondNumber)
         }
+        let squareOfNumber = (firstNumber * firstNumber)
+        let cubeOfNumber = (firstNumber * firstNumber * firstNumber)
+        print("Kvadrat chisla: ", squareOfNumber)
+        print("Cube chisla :", cubeOfNumber)
+        
             
     }
 
