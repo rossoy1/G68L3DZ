@@ -13,23 +13,28 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let firstNumber = Int.random(in: 1...10)
-        let secondNumber = Int.random(in: 1...10)
+        let firstNumber = Int(Int.random(in: 1...10))
+        let secondNumber = Int(Int.random(in: 1...10))
         print(firstNumber)
         print(secondNumber)
-        if firstNumber > secondNumber {
-            print("Biggest number: ", firstNumber)}
-        else {
-            print("Biggest number: ", secondNumber)
-        }
-        let squareOfNumber = (firstNumber * firstNumber)
-        let cubeOfNumber = (firstNumber * firstNumber * firstNumber)
-        print("Kvadrat chisla: ", squareOfNumber)
-        print("Cube chisla :", cubeOfNumber) 
+        print("Bolshee iz dvuh chisel: ",maxNumber(firstNumber: firstNumber, secondNumber: secondNumber))
         
-            
+        
     }
-
-
 }
+
+        func maxNumber (firstNumber: Int, secondNumber: Int)->Int{
+            var biggestNumber = Int()
+            if firstNumber > secondNumber{
+                biggestNumber = firstNumber
+            } else {
+                biggestNumber = secondNumber
+            }
+                
+                return biggestNumber
+            }
+            
+        
+    
+
 
