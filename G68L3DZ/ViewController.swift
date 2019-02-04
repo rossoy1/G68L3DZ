@@ -18,7 +18,10 @@ class ViewController: UIViewController {
         print(firstNumber)
         print(secondNumber)
         print("Bolshee iz dvuh chisel: ",maxNumber(firstNumber: firstNumber, secondNumber: secondNumber))
-        
+       var r = Int.random(in: 1...10)
+        print("Chislo dlya vozvedeniya v kvadrat i kub :", r)
+        print("Kvadrat chisla :",squareOfNumber(a: r))
+        print("Cube chisla :", cubeOfNumber(a: r))
         
     }
 }
@@ -33,8 +36,14 @@ class ViewController: UIViewController {
                 
                 return biggestNumber
             }
-            
-        
+
+func squareOfNumber (a:Int)->Int {
+    let square = (a*a)
+    return square
+}
+
+func cubeOfNumber (a:Int)->Int {
+    let cube = (a*a*a)
+    return cube
     
-
-
+}
